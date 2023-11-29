@@ -1,0 +1,489 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		941347D02A5D01CB000410BF /* PasswordAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 941347CF2A5D01CB000410BF /* PasswordAppApp.swift */; };
+		941347D22A5D01CB000410BF /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 941347D12A5D01CB000410BF /* MainView.swift */; };
+		941347D42A5D01CD000410BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 941347D32A5D01CD000410BF /* Assets.xcassets */; };
+		941347D72A5D01CD000410BF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 941347D62A5D01CD000410BF /* Preview Assets.xcassets */; };
+		941347DF2A5D0203000410BF /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 941347DE2A5D0203000410BF /* FirebaseAuth */; };
+		941347E12A5D0203000410BF /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 941347E02A5D0203000410BF /* FirebaseFirestore */; };
+		941347E32A5D0203000410BF /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 941347E22A5D0203000410BF /* FirebaseFirestoreSwift */; };
+		941347E52A5D0294000410BF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 941347E42A5D0293000410BF /* GoogleService-Info.plist */; };
+		941347EB2A5D0532000410BF /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 941347EA2A5D0532000410BF /* LoginView.swift */; };
+		941347ED2A5F1F1A000410BF /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 941347EC2A5F1F1A000410BF /* LoginViewModel.swift */; };
+		941347EF2A5F6998000410BF /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 941347EE2A5F6998000410BF /* HomeView.swift */; };
+		9481EC622A6667C900648E41 /* KeyChainHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9481EC612A6667C900648E41 /* KeyChainHelper.swift */; };
+		9481EC642A6F5B9F00648E41 /* KeyChainPropertyWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9481EC632A6F5B9F00648E41 /* KeyChainPropertyWrapper.swift */; };
+		94882AAC2A89693200E3C21C /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94882AAB2A89693200E3C21C /* RegisterView.swift */; };
+		94882AAE2A896C0B00E3C21C /* RegisterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94882AAD2A896C0B00E3C21C /* RegisterViewModel.swift */; };
+		94882AB02A8AC30800E3C21C /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94882AAF2A8AC30800E3C21C /* MainViewModel.swift */; };
+		9491D58A2A8ADB0D006CD60C /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9491D5892A8ADB0D006CD60C /* User.swift */; };
+		94FA9CE92AAE082E007EF3E6 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94FA9CE82AAE082E007EF3E6 /* ListView.swift */; };
+		94FA9CEB2AAE1390007EF3E6 /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94FA9CEA2AAE1390007EF3E6 /* ListViewModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		941347CC2A5D01CB000410BF /* PasswordApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PasswordApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		941347CF2A5D01CB000410BF /* PasswordAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordAppApp.swift; sourceTree = "<group>"; };
+		941347D12A5D01CB000410BF /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		941347D32A5D01CD000410BF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		941347D62A5D01CD000410BF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		941347E42A5D0293000410BF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		941347EA2A5D0532000410BF /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		941347EC2A5F1F1A000410BF /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		941347EE2A5F6998000410BF /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		9481EC612A6667C900648E41 /* KeyChainHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyChainHelper.swift; sourceTree = "<group>"; };
+		9481EC632A6F5B9F00648E41 /* KeyChainPropertyWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyChainPropertyWrapper.swift; sourceTree = "<group>"; };
+		94882AAB2A89693200E3C21C /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
+		94882AAD2A896C0B00E3C21C /* RegisterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewModel.swift; sourceTree = "<group>"; };
+		94882AAF2A8AC30800E3C21C /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		9491D5892A8ADB0D006CD60C /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		94EC82702A650DF400DBDACA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		94FA9CE82AAE082E007EF3E6 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
+		94FA9CEA2AAE1390007EF3E6 /* ListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		941347C92A5D01CB000410BF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				941347DF2A5D0203000410BF /* FirebaseAuth in Frameworks */,
+				941347E12A5D0203000410BF /* FirebaseFirestore in Frameworks */,
+				941347E32A5D0203000410BF /* FirebaseFirestoreSwift in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		941347C32A5D01CB000410BF = {
+			isa = PBXGroup;
+			children = (
+				941347CE2A5D01CB000410BF /* PasswordApp */,
+				941347CD2A5D01CB000410BF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		941347CD2A5D01CB000410BF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				941347CC2A5D01CB000410BF /* PasswordApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		941347CE2A5D01CB000410BF /* PasswordApp */ = {
+			isa = PBXGroup;
+			children = (
+				94EC82702A650DF400DBDACA /* Info.plist */,
+				941347E92A5D04BC000410BF /* Other */,
+				9481EC602A66679600648E41 /* Helper */,
+				941347E82A5D04B0000410BF /* Models */,
+				941347E72A5D0492000410BF /* ViewModels */,
+				941347E62A5D048A000410BF /* Views */,
+				941347D52A5D01CD000410BF /* Preview Content */,
+			);
+			path = PasswordApp;
+			sourceTree = "<group>";
+		};
+		941347D52A5D01CD000410BF /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				941347D62A5D01CD000410BF /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		941347E62A5D048A000410BF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				941347D12A5D01CB000410BF /* MainView.swift */,
+				941347EA2A5D0532000410BF /* LoginView.swift */,
+				941347EE2A5F6998000410BF /* HomeView.swift */,
+				94882AAB2A89693200E3C21C /* RegisterView.swift */,
+				94FA9CE82AAE082E007EF3E6 /* ListView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		941347E72A5D0492000410BF /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				941347EC2A5F1F1A000410BF /* LoginViewModel.swift */,
+				94882AAD2A896C0B00E3C21C /* RegisterViewModel.swift */,
+				94882AAF2A8AC30800E3C21C /* MainViewModel.swift */,
+				94FA9CEA2AAE1390007EF3E6 /* ListViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		941347E82A5D04B0000410BF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				9491D5892A8ADB0D006CD60C /* User.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		941347E92A5D04BC000410BF /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				941347E42A5D0293000410BF /* GoogleService-Info.plist */,
+				941347CF2A5D01CB000410BF /* PasswordAppApp.swift */,
+				941347D32A5D01CD000410BF /* Assets.xcassets */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		9481EC602A66679600648E41 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				9481EC612A6667C900648E41 /* KeyChainHelper.swift */,
+				9481EC632A6F5B9F00648E41 /* KeyChainPropertyWrapper.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		941347CB2A5D01CB000410BF /* PasswordApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 941347DA2A5D01CD000410BF /* Build configuration list for PBXNativeTarget "PasswordApp" */;
+			buildPhases = (
+				941347C82A5D01CB000410BF /* Sources */,
+				941347C92A5D01CB000410BF /* Frameworks */,
+				941347CA2A5D01CB000410BF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PasswordApp;
+			packageProductDependencies = (
+				941347DE2A5D0203000410BF /* FirebaseAuth */,
+				941347E02A5D0203000410BF /* FirebaseFirestore */,
+				941347E22A5D0203000410BF /* FirebaseFirestoreSwift */,
+			);
+			productName = PasswordApp;
+			productReference = 941347CC2A5D01CB000410BF /* PasswordApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		941347C42A5D01CB000410BF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					941347CB2A5D01CB000410BF = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 941347C72A5D01CB000410BF /* Build configuration list for PBXProject "PasswordApp" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 941347C32A5D01CB000410BF;
+			packageReferences = (
+				941347DD2A5D0203000410BF /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
+			productRefGroup = 941347CD2A5D01CB000410BF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				941347CB2A5D01CB000410BF /* PasswordApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		941347CA2A5D01CB000410BF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				941347D72A5D01CD000410BF /* Preview Assets.xcassets in Resources */,
+				941347D42A5D01CD000410BF /* Assets.xcassets in Resources */,
+				941347E52A5D0294000410BF /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		941347C82A5D01CB000410BF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				941347ED2A5F1F1A000410BF /* LoginViewModel.swift in Sources */,
+				941347EB2A5D0532000410BF /* LoginView.swift in Sources */,
+				941347D22A5D01CB000410BF /* MainView.swift in Sources */,
+				9481EC622A6667C900648E41 /* KeyChainHelper.swift in Sources */,
+				941347EF2A5F6998000410BF /* HomeView.swift in Sources */,
+				94882AB02A8AC30800E3C21C /* MainViewModel.swift in Sources */,
+				94882AAC2A89693200E3C21C /* RegisterView.swift in Sources */,
+				9481EC642A6F5B9F00648E41 /* KeyChainPropertyWrapper.swift in Sources */,
+				94FA9CE92AAE082E007EF3E6 /* ListView.swift in Sources */,
+				94FA9CEB2AAE1390007EF3E6 /* ListViewModel.swift in Sources */,
+				94882AAE2A896C0B00E3C21C /* RegisterViewModel.swift in Sources */,
+				941347D02A5D01CB000410BF /* PasswordAppApp.swift in Sources */,
+				9491D58A2A8ADB0D006CD60C /* User.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		941347D82A5D01CD000410BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		941347D92A5D01CD000410BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		941347DB2A5D01CD000410BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"PasswordApp/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PasswordApp/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Passwords;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.alecmorrison.PasswordApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		941347DC2A5D01CD000410BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"PasswordApp/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PasswordApp/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Passwords;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.alecmorrison.PasswordApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		941347C72A5D01CB000410BF /* Build configuration list for PBXProject "PasswordApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				941347D82A5D01CD000410BF /* Debug */,
+				941347D92A5D01CD000410BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		941347DA2A5D01CD000410BF /* Build configuration list for PBXNativeTarget "PasswordApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				941347DB2A5D01CD000410BF /* Debug */,
+				941347DC2A5D01CD000410BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		941347DD2A5D0203000410BF /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		941347DE2A5D0203000410BF /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 941347DD2A5D0203000410BF /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		941347E02A5D0203000410BF /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 941347DD2A5D0203000410BF /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		941347E22A5D0203000410BF /* FirebaseFirestoreSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 941347DD2A5D0203000410BF /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestoreSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 941347C42A5D01CB000410BF /* Project object */;
+}

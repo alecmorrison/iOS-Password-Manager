@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>NSFaceIDUsageDescription</key>
+	<string></string>
+	<key>CLIENT_ID</key>
+	<string>583418985053-3nsqiu3kl1i6gn3i1v7eqet9bigv0uqj.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.583418985053-3nsqiu3kl1i6gn3i1v7eqet9bigv0uqj</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDa6qZ0Kvhmrgp8GXYf_QozLUR1q1-nKaw</string>
+	<key>GCM_SENDER_ID</key>
+	<string>583418985053</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.alecmorrison.PasswordApp</string>
+	<key>PROJECT_ID</key>
+	<string>swift-password-app</string>
+	<key>STORAGE_BUCKET</key>
+	<string>swift-password-app.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false/>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false/>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true/>
+	<key>IS_GCM_ENABLED</key>
+	<true/>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true/>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:583418985053:ios:8d545e8f5e5682a3212bb4</string>
+</dict>
+</plist>
