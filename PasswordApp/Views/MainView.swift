@@ -19,10 +19,7 @@ struct MainView: View {
         NavigationView{
             if viewModel.isSignedIn, !viewModel.currentUserId.isEmpty {
                 //signed in state
-                HomeView()
-                    .onTapGesture {
-                        print(storedEmail as Any)
-                    }
+                accountView
             }
             else{
                 LoginView()
@@ -33,6 +30,22 @@ struct MainView: View {
             }
         }
     }
+    
+    
+    @ViewBuilder
+    var accountView: some View{
+        TabView{
+            ListView(userId: viewModel.currentUserId)
+                .tabItem {
+                    Label("Home", systemImage: "house")
+                }
+            ProfileView()
+                .tabItem {
+                    Label("Profile", systemImage: "person.circle")
+                }
+        }
+    }
+    
 }
 
 struct MainView_Previews: PreviewProvider {
